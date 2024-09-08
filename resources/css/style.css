@@ -1,113 +1,134 @@
+/*Main configuration*/
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
+/*Body*/
+
 body {
-  margin: 0px auto;
-  background-color: #f5f5f5;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-.container {
-  width: 90%;
-  margin: 0px auto;
-  background-color: #f5f5f5;
-}
+/*Wrapper Header*/
 
-/* Menu of navegation */
-
-#navbar {
+.wrapper-header {
   display: flex;
-  height: 150px;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 40px;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #303c5f;
 }
 
-.portfolio {
-  font-family: "Courier New", Courier, monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  cursor: default;
+/*Header*/
+
+header {
+  width: 50%;
+  height: 800px;
 }
 
-.menu ul {
+.name {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.name p {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  color: rgb(241, 192, 30);
+}
+
+/*Header -> Navegation*/
+
+.menu {
+  padding-left: 50px;
+}
+
+.menu ol {
   display: flex;
   list-style-type: none;
+  width: 100%;
+  height: 50px;
 }
 
 .menu li {
-  padding: 0px 25px;
+  padding-right: 30px;
 }
 
 .menu a {
-  color: #000000;
   text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
-.social-media ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.social-media li {
-  padding: 0px 10px;
-}
-
-.social-media a {
-  color: #000000;
-  text-decoration: none;
-}
-
-/* main content of the Description and photo*/
-.main-content {
-  width: 100%;
-  height: 800px;
-  display: flex;
-}
+/*Header -> Description*/
 
 .description {
-  height: 100%;
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
 }
 
+/* Photo*/
+
 .photo {
-  width: 60%;
-  height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 800px;
 }
 
 .photo img {
-  width: 54%;
-  height: 650px;
-  border-radius: 50% 0% 50% 50%;
   position: fixed;
-  padding-left: 80px;
+  height: 1000px;
+  width: 50%;
 }
 
-.fullstack {
-  font-size: 50px;
-  line-height: 3.5rem;
-  font-family: "Roboto";
-  color: #000000;
-  padding: 15px 0px;
+.social-media {
+  position: fixed;
+  color: red;
+  z-index: 3;
+  width: 50%;
+  height: 100vh;
+  top: 40%;
 }
 
-.fullstack span {
-  color: rgb(48, 109, 189);
-}
-.developer {
-  font-size: 20px;
-  line-height: 1.4rem;
-  font-family: "Roboto";
-  color: rgb(94, 136, 192);
-  padding: 15px 0px;
+.social-media ul {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  background-color: rgb(241, 192, 30);
+  list-style-type: none;
+  height: 180px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px;
 }
 
-.second-container {
+.social-media li {
+  padding: 10px 0px;
+}
+
+.social-media a {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.main-content {
   position: relative;
-  background-color: green;
-  height: 500px;
-  z-index: 1;
+  z-index: 2;
+  background-color: #f5f5f5;
+  height: 1200px;
+  width: 100%;
 }
