@@ -21,11 +21,11 @@
   </head>
   <body>
     <div class="wrapper-header">
-      <header>
-        <div class="name">
+      <header id="laptop">
+        <div class="name-header">
           <p>Paulo Augusto Hahn</p>
         </div>
-        <nav class="menu">
+        <nav class="menu-laptop">
           <ol>
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
@@ -35,12 +35,31 @@
           </ol>
         </nav>
         <div class="description">
-          <p>Hey, I'm</p>
-          <p>Paulo Augusto</p>
-          <p>Hahn</p>
-          <p>Full Stack / Java developer</p>
+          <p class="greeting">Hey, I'm</p>
+          <p class="name-description">Paulo Augusto</p>
+          <p class="name-description">Hahn</p>
+          <p class="role">Full Stack / Java developer</p>
         </div>
       </header>
+      <header id="mobile">
+        <div class="mobile-header">
+          <p>Paulo Augusto Hahn</p>
+          <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav id="menu-mobile">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <div class="photo">
         <img src="resources/images/DSC00210buPaulo.jpg" alt="" />
         <nav class="social-media">
@@ -69,5 +88,7 @@
     <div class="main-content">
       <p>test</p>
     </div>
+
+    <script src="resources/script/script.js"></script>
   </body>
 </html>

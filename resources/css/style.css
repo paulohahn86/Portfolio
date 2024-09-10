@@ -20,24 +20,26 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 800px;
+  /* height: 800px; */
   background-color: #303c5f;
 }
 
-/*Header*/
+/*Header Laptop*/
 
-header {
+#laptop {
   width: 50%;
   height: 800px;
 }
 
-.name {
+/* Header Name*/
+
+.name-header {
   padding-top: 50px;
   padding-bottom: 10px;
-  padding-left: 50px;
+  padding-left: 5%;
 }
 
-.name p {
+.name-header p {
   width: 100%;
   height: 50px;
   font-size: 30px;
@@ -46,25 +48,30 @@ header {
 
 /*Header -> Navegation*/
 
-.menu {
-  padding-left: 50px;
+.menu-laptop {
+  margin: 0 auto;
+  padding-left: 5%;
 }
 
-.menu ol {
+.menu-laptop ol {
   display: flex;
   list-style-type: none;
-  width: 100%;
   height: 50px;
 }
 
-.menu li {
-  padding-right: 30px;
+.menu-laptop li {
+  padding-right: 5%;
 }
 
-.menu a {
+.menu-laptop a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+}
+
+.menu-laptop li:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 /*Header -> Description*/
@@ -72,10 +79,95 @@ header {
 .description {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  height: 600px;
+}
+
+.greeting {
+  font-size: 50px;
+  color: rgb(241, 192, 30);
+  padding-left: 10%;
+  padding-bottom: 10px;
+}
+
+.name-description {
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 0.25rem;
+  padding-left: 10%;
+  padding-bottom: 10px;
+}
+
+.role {
+  padding-left: 10%;
+  color: white;
+  font-weight: 100;
+}
+
+/*Header Mobile*/
+
+#mobile {
+  display: none;
+  width: 100%;
+}
+
+/* Header Mobile Navegation*/
+
+.mobile-header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.mobile-header p {
+  padding-left: 5%;
+  font-size: 20px;
+  color: rgb(241, 192, 30);
+}
+
+#icon-menu {
+  padding-right: 5%;
+}
+
+#icon-menu i {
+  font-size: 30px;
+}
+
+#icon-menu .fa-x {
+  display: none;
+}
+
+#menu-mobile {
+  display: none;
+  height: 200px;
+}
+
+#menu-mobile ul {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 600px;
+  height: 100%;
+  list-style-type: none;
+}
+
+#menu-mobile li {
+  padding: 5px;
+}
+
+#menu-mobile li:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#menu-mobile a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Photo*/
@@ -91,7 +183,8 @@ header {
 .photo img {
   position: fixed;
   height: 1000px;
-  width: 50%;
+  min-width: 50%;
+  margin: 0 auto;
 }
 
 .social-media {
@@ -99,7 +192,6 @@ header {
   color: red;
   z-index: 3;
   width: 50%;
-  height: 100vh;
   top: 40%;
 }
 
@@ -131,4 +223,67 @@ header {
   background-color: #f5f5f5;
   height: 1200px;
   width: 100%;
+}
+
+@media only screen and (max-width: 769px) {
+  #laptop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  .wrapper-header {
+    flex-direction: column;
+  }
+  .photo {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+  }
+
+  .photo img {
+    position: relative;
+    width: 100%;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .photo {
+    height: 500px;
+  }
+
+  .photo img {
+    height: 500px;
+  }
+
+  .mobile-header p {
+    font-size: 16px;
+  }
+
+  #icon-menu i {
+    font-size: 20px;
+  }
+
+  .social-media ul {
+    height: 150px;
+    width: 40px;
+  }
+
+  .social-media a {
+    font-size: 1rem;
+  }
+
+  #menu-mobile {
+    height: 180px;
+  }
+
+  #menu-mobile a {
+    font-size: 14px;
+  }
 }
