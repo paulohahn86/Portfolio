@@ -182,17 +182,16 @@ body {
 
 .photo img {
   position: fixed;
-  height: 1000px;
+  height: 800px;
   min-width: 50%;
   margin: 0 auto;
 }
 
 .social-media {
   position: fixed;
-  color: red;
   z-index: 3;
   width: 50%;
-  top: 40%;
+  top: calc(50% - 90px);
 }
 
 .social-media ul {
@@ -244,18 +243,25 @@ body {
   }
 
   .photo img {
-    position: relative;
+    position: absolute;
     width: 100%;
+    height: 1000px;
   }
 
   .social-media {
+    position: fixed;
     width: 100%;
+    top: calc(50% - 90px);
   }
 }
 
 @media only screen and (max-width: 430px) {
-  .mobile-header {
-    background-color: aquamarine;
+  .photo {
+    height: 550px;
+  }
+
+  .photo img {
+    height: 550px;
   }
 
   .mobile-header p {
