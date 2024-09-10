@@ -255,11 +255,11 @@ body {
 
 @media only screen and (max-width: 430px) {
   .photo {
-    height: 500px;
+    height: 700px;
   }
 
   .photo img {
-    height: 500px;
+    height: 700px;
   }
 
   .mobile-header p {
