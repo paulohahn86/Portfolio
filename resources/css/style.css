@@ -261,6 +261,57 @@ body {
   font-weight: 500;
 }
 
+/* Skills*/
+
+#skills {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  background-color: #7186bb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.one {
+  margin-top: 100px;
+}
+
+.third {
+  margin-bottom: 100px;
+}
+
+.line img {
+  height: 120px;
+  border-radius: 4px;
+  margin: 0px 15px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.line img:hover {
+  transform: scale(0.5);
+  transition: 2s;
+}
+
+.line figcaption {
+  text-align: center;
+  color: #303c5f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-left: 10px;
+}
 @media only screen and (min-width: 1900px) {
   #laptop {
     height: 1000px;
@@ -360,5 +411,9 @@ body {
 
   #about-me p:last-child {
     margin-bottom: 40px;
+  }
+
+  .line {
+    flex-wrap: wrap;
   }
 }
