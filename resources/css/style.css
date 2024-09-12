@@ -275,16 +275,37 @@ body {
   justify-content: center;
 }
 
+#skills h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: 50px;
+}
+
 .line {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .one {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.one figure {
+  margin: 10px 0px;
+}
+
+.second figure {
+  margin: 10px 0px;
+}
+
+.third figure {
+  margin: 10px 0px;
 }
 
 .third {
@@ -296,11 +317,6 @@ body {
   border-radius: 4px;
   margin: 0px 15px;
   box-shadow: 10px 5px 5px black;
-}
-
-.line img:hover {
-  transform: scale(0.5);
-  transition: 2s;
 }
 
 .line figcaption {
