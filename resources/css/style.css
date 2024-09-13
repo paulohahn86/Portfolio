@@ -328,6 +328,7 @@ body {
   letter-spacing: 0.1rem;
   padding-left: 10px;
 }
+
 @media only screen and (min-width: 1900px) {
   #laptop {
     height: 1000px;
@@ -429,7 +430,24 @@ body {
     margin-bottom: 40px;
   }
 
+  #skills h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
   .line {
     flex-wrap: wrap;
+  }
+
+  .line img {
+    height: 100px;
+  }
+
+  .one {
+    margin-top: 30px;
+  }
+
+  .third {
+    margin-bottom: 70px;
   }
 }
