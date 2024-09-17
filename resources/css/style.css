@@ -457,6 +457,79 @@ body {
 .luxembourg {
   padding: 20px 0px;
 }
+
+/* Contact */
+
+#contact {
+  position: relative;
+  width: 100%;
+  background-color: #303c5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+.main-contact {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.telephone {
+  width: 50%;
+  text-align: center;
+}
+
+.email {
+  width: 50%;
+  text-align: center;
+}
+
+.telephone a {
+  color: rgb(241, 192, 30);
+  text-decoration: none;
+}
+
+.email a {
+  color: rgb(241, 192, 30);
+  text-decoration: none;
+}
+
+.work {
+  color: rgb(241, 192, 30);
+  margin: 20px;
+}
+
+.work p {
+  cursor: default;
+}
+
+.telephone i,
+.email i,
+.work i {
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Footer*/
+
+footer {
+  position: relative;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+
 @media only screen and (min-width: 1900px) {
   #laptop {
     height: 1000px;
@@ -530,6 +603,11 @@ body {
   .timeline-details {
     order: 2;
     width: 90%;
+    padding-top: 20px;
+  }
+
+  .main-contact {
+    width: 100%;
   }
 }
 
@@ -603,5 +681,19 @@ body {
 
   #experiences h1 {
     font-size: 45px;
+  }
+
+  #contact {
+    padding: 50px 0px;
+  }
+
+  .main-contact {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  footer {
+    height: 30px;
+    font-size: 0.7rem;
   }
 }
