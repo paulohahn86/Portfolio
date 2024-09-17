@@ -125,6 +125,7 @@ body {
 }
 
 .mobile-header p {
+  width: 100%;
   padding-left: 5%;
   font-size: 20px;
   color: rgb(241, 192, 30);
@@ -238,7 +239,7 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: 60px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #about-me p {
@@ -253,7 +254,7 @@ body {
 }
 
 #about-me p:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .soft-skills {
@@ -309,7 +310,7 @@ body {
 }
 
 .third {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .line img {
@@ -329,6 +330,133 @@ body {
   padding-left: 10px;
 }
 
+/* Experiences*/
+
+#experiences {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#experiences h1 {
+  color: #303c5f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.timeline-event {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.blank-box {
+  width: 45%;
+  order: 3;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  order: 2;
+  background: linear-gradient(to right, #fff 40%, #000 40%, #000 60%, #fff 60%);
+}
+
+.timeline span {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+.timeline-details {
+  width: 45%;
+  order: 1;
+}
+
+.timeline-event {
+  text-align: right;
+}
+
+.right-side {
+  text-align: left;
+}
+
+.right-side .blank-box {
+  order: 1;
+}
+
+.right-side .timeline-details {
+  order: 3;
+}
+
+.timeline-details .timeline-company {
+  color: rgb(91, 91, 91);
+  padding: 5px 30px;
+}
+
+.timeline-details h3 {
+  padding: 5px 30px;
+  font-weight: 500;
+}
+
+.timeline-details .timeline-type {
+  padding: 5px 30px;
+  color: rgb(220, 74, 74);
+}
+
+.timeline-details .timeline-description {
+  padding: 5px 30px;
+  line-height: 1.5rem;
+  margin: 5px 0px;
+}
+
+.first-line .blank-box {
+  height: 80px;
+}
+
+.first-line .timeline {
+  align-items: normal;
+}
+
+.first-line span {
+  background-color: red;
+}
+
+.last-line .blank-box {
+  height: 80px;
+}
+
+.last-line .timeline {
+  align-items: end;
+}
+
+.last-line span {
+  background-color: black;
+}
+
+.luxembourg {
+  padding: 20px 0px;
+}
 @media only screen and (min-width: 1900px) {
   #laptop {
     height: 1000px;
@@ -380,6 +508,28 @@ body {
     position: fixed;
     width: 100%;
     top: calc(50% - 90px);
+  }
+
+  .line {
+    flex-wrap: wrap;
+  }
+
+  .timeline-event {
+    text-align: left;
+  }
+
+  .blank-box {
+    order: 3;
+    width: 0%;
+  }
+
+  .timeline {
+    order: 1;
+  }
+
+  .timeline-details {
+    order: 2;
+    width: 90%;
   }
 }
 
@@ -449,5 +599,9 @@ body {
 
   .third {
     margin-bottom: 70px;
+  }
+
+  #experiences h1 {
+    font-size: 45px;
   }
 }
